@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="islamic quiz logo.png">
+</head>
+<body>
+    <div class="mainbody">
+        <h1>Welcome To Islamic Quiz Application</h1>
+        <p>Choose a category, test your knowledge, and try to beat your high score.</p>
+        <div class="btns">
+            <button class="btn" id="b1">Pillars Of Islam</button>
+            <button class="btn" id="b2">Prophets</button>
+            <button class="btn" id="b3">Quran</button>
+        </div>
+        <button class="start_btn">Start</button>
+        <p>_________________________________________________________________</p>
+        <div class="text">
+            <div class="text1">
+                <h3>How It Work</h3>
+                <ul>
+                    <li>Choose a category and press Start.</li>
+                    <li>Answer multiple-choice questions.</li>
+                    <li>See explanations and your high score.</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="tip">Tip: Use the browser's device emulator to test responsive layout.</div>
+    </div>
+
+
+
+    <!-- Question Interface  -->
+     <!-- QUIZ SCREEN -->
+<div id="quizScreen" style="display:none; margin-top:40px;" class="quizContainer">
+    
+    <h2 id="categoryTitle" style="text-align:center; color:white; margin-bottom:20px;"></h2>
+
+    <div class="questionCard">
+        <p id="questionText" class="question"></p>
+
+        <div class="options">
+            <button id="opt1" class="optionBtn"></button>
+            <button id="opt2" class="optionBtn"></button>
+            <button id="opt3" class="optionBtn"></button>
+            <button id="opt4" class="optionBtn"></button>
+        </div>
+
+        <button id="nextBtn" class="nextBtn , btn1">Next</button>
+    </div>
+</div>
+
+<!-- RESULT SCREEN -->
+<div id="resultScreen" style="display:none; margin-top:40px;" class="quizContainer">
+    <h2 style="color:white; text-align:center; padding-bottom: 20px;">Quiz Completed!</h2>
+
+    <div class="resultCard">
+        <p class="resultText">Your Score: <span id="finalScore"></span> / 10</p>
+        <p class="resultText">Percentage: <span id="finalPercent"></span>%</p>
+
+
+        <button id="retryBtn" class="nextBtn , btn2" style="background:rgb(109, 139, 0);">Retry</button>
+        <button id="homeBtn" class="nextBtn" style="background:rgb(109, 139, 0);">Home</button>
+    </div>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>
